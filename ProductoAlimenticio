@@ -1,0 +1,20 @@
+package Java.Proyecto2;
+
+import java.util.Date;
+
+    class ProductoAlimenticio extends Producto {
+    private Date fechaCaducidad;
+
+    public ProductoAlimenticio(String nombre, double precio, int Cantidad, Date fechaCaducidad) {
+        super(nombre, precio, Cantidad);
+        this.fechaCaducidad = fechaCaducidad;
+    }
+
+    public Date getFechaCaducidad() {
+        return fechaCaducidad;
+    }
+
+    public void setFechaCaducidad(Date fechaCaducidad) {
+        this.fechaCaducidad = fechaCaducidad;
+    }
+}
